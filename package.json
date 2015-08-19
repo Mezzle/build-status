@@ -1,0 +1,10 @@
+{
+    "name": "build-status",
+    "version": "0.0.0",
+    "description": "Requure Bower",
+    "author": "Martin Meredith <martin@sourceguru.net>",
+    "license": "GPL-3",
+    "dependencies": {
+        "bower": "~1.4.1"
+    }
+}
