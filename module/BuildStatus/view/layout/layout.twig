@@ -1,0 +1,41 @@
+{{ docType() }}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>
+        {% block title %}Build Status{% endblock title %}
+    </title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .branch {
+            width: 22%;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+            color: white;
+        }
+        .success {
+            background-color: blue;
+        }
+        .failure {
+            background-color: red;
+        }
+        .context {
+            width: 20px;
+            height: 20px;
+            border: 1px solid white;
+            display: inline-block;
+        }
+        .context-container {
+            text-align: right;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="/js/jquery/jquery.min.js"></script>
+</head>
+<body>
+    {% block content %}{{ content|raw }}{% endblock content %}
+</body>
+</html>

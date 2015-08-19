@@ -12,4 +12,9 @@
  */
 
 return [
+    'github' => [
+        'token' => getenv('GITHUB_TOKEN'),
+        'username' => getenv('GITHUB_USERNAME'),
+        'repository' => getenv('GITHUB_REPOSITORY')
+    ]
 ];
