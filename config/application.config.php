@@ -3,10 +3,8 @@
 return [
     // Development time modules
     'modules' => [
-        'Application',
+        'BuildStatus',
         'ZF\DevelopmentMode',
-        'DoctrineModule',
-        'DoctrineORMModule',
         'ZfcTwig',
     ],
     'module_listener_options' => [

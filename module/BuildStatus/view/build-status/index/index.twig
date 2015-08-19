@@ -1,0 +1,38 @@
+{% extends "layout/layout" %}
+
+{% block content %}
+    <script>
+        $(document).ready(function () {
+            $.getJSON('/index/json', function (data) {
+                console.log(data);
+                for (foo in data.builds) {
+                    if (data.builds.hasOwnProperty(foo)) {
+                        var build = data.builds[foo];
+
+                        var branch = $('<div>').text(foo)
+                                .addClass(build.state)
+                                .addClass('branch');
+
+                        var contexts_div = $('<div>').addClass('context-container');
+
+                        for (context in build.contexts) {
+                            if (build.contexts.hasOwnProperty(context)) {
+                                var state = build.contexts[context];
+
+                                $('<div>').addClass(state)
+                                        .addClass('context')
+                                        .attr('title', context)
+                                        .appendTo(contexts_div);
+                            }
+                        }
+
+                        contexts_div.appendTo(branch);
+
+                        branch.appendTo($('body'));
+
+                    }
+                }
+            })
+        });
+    </script>
+{% endblock %}

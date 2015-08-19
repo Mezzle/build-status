@@ -1,0 +1,19 @@
+{
+  "name": "staff-portal",
+  "version": "0.0.0",
+  "homepage": "https://www.sourceguru.net/staff-portal/",
+  "authors": [
+    "Martin Meredith <martin@sourceguru.net>"
+  ],
+  "license": "GPL-3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

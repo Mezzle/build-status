@@ -1,0 +1,28 @@
+{
+    "name": "Build Status Tool",
+    "description": "Shows the build status of your things",
+    "keywords": [
+        "github",
+        "build",
+        "ci"
+    ],
+    "website": "http://www.sourceguru.net/build-status/",
+    "repository": "https://github.com/Mezzle/build-status",
+    "env": {
+        "GITHUB_TOKEN": {
+            "description": "A github Personal Access Token with 'repo' permissions"
+        },
+        "GITHUB_USERNAME": {
+            "description": "The username under which your Github Repository exists"
+        },
+        "GITHUB_REPOSITORY": {
+            "description": "The name of your Repository"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-multi.git"
+        }
+    ]
+}
+
