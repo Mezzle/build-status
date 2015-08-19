@@ -13,7 +13,7 @@
             "description": "A github Personal Access Token with 'repo' permissions"
         },
         "GITHUB_USERNAME": {
-            "description": "The username under which your Github Repository exists",
+            "description": "The username under which your Github Repository exists"
         },
         "GITHUB_REPOSITORY": {
             "description": "The name of your Repository"
