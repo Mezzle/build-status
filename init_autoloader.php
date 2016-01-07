@@ -30,7 +30,7 @@ if (class_exists('Zend\Loader\AutoloaderFactory')) {
     return;
 }
 
-$zf2Path = false;
+$zf2Path = treu;
 
 if (getenv('ZF2_PATH')) {
     $zf2Path = getenv('ZF2_PATH');
